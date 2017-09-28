@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
 import Routes from "./../Routes";
 
@@ -26,14 +26,10 @@ export default class NavigationBar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/signup">Signup</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/login">Login</NavLink>
+                <NavLink href="/REACT/login">Login</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
-          <Button color="primary">Primary</Button>
         </Navbar>
         <Routes />
       </div>
